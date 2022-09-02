@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8f0c2f663.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <title>Miguel Rodriguez</title>
+</head>
+<body class="dark">
+
+    <header class="header">
+        <div class="switches">
+            <div id="toggle-theme" class="toggle-theme">
+                <img id="toggle-icon" src="./images/moon.svg" alt="icon theme" class="toggle-theme__icon">
+                <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+            </div>
+        </div>
+        <div id="toggle-colors" class="colors">
+            <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+            <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+            <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+            <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="column column--left">
+            <article class="card card--profile">
+                <div class="card__img--container">
+                    <img src="./images/img-1.jpg" alt="imagen de portada">
+                </div>
+                <div class="card__header">
+                    <h2 class="card__title">Miguel Angel Rodriguez</h2>
+                    <p class="card__subtitle">Front end Developer</p>
+                </div>
+                <div class="card__body">
+                    <div class="card__link">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <a href="mailto:mangel20sr@gmail.com">mangel20sr@gmail.com</a>
+                    </div>
+                    <div class="card__link">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <a href="tel:9631567144">963 156 7144</a>
+                    </div>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quo adipisci delectus commodi consequatur autem officiis in perspiciatis placeat praesentium?<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui incidunt inventore suscipit non, cum obcaecati eos, debitis dolores quibusdam officiis excepturi minus velit dolorem. Corporis nulla distinctio recusandae amet ad?</p>
+                </div>
+            </article>
+        </section>
+        <section class="column column--right">
+            <article class="card">
+                <h2 class="card__title">Front end</h2>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">HTML</p>
+                        <div class="skills__bar skills__bar--90"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">CSS</p>
+                        <div class="skills__bar skills__bar--60"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">JS</p>
+                        <div class="skills__bar skills__bar--50"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
