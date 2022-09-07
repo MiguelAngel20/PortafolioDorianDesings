@@ -21,6 +21,14 @@
                 <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
             </div>
         </div>
+        <div id="flags" class="flags">
+            <div class="flags__item" data-language="es">
+                <img src="./images/mexico.png" alt="" class="flags__img">
+            </div>
+            <div class="flags__item" data-language="usa">
+                <img src="./images/usa.png" alt="" class="flags__img">
+            </div>
+        </div>
         <div id="toggle-colors" class="colors">
             <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
             <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
@@ -30,6 +38,7 @@
     </header>
 
     <main class="main">
+
         <section class="column column--left">
             <article class="card card--profile">
                 <div class="card__img--container">
@@ -37,7 +46,7 @@
                 </div>
                 <div class="card__header">
                     <h2 class="card__title">Miguel Angel Rodriguez</h2>
-                    <p class="card__subtitle">Front end Developer</p>
+                    <p class="card__subtitle" data-section="profile" data-value="rol">Front end Developer</p>
                 </div>
                 <div class="card__body">
                     <div class="card__link">
@@ -51,10 +60,28 @@
                     <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quo adipisci delectus commodi consequatur autem officiis in perspiciatis placeat praesentium?<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui incidunt inventore suscipit non, cum obcaecati eos, debitis dolores quibusdam officiis excepturi minus velit dolorem. Corporis nulla distinctio recusandae amet ad?</p>
                 </div>
             </article>
+            <article class="card card--experience">
+                <h2 class="card__title">Experiences</h2>
+                <div class="experience">
+                    <img src="./images/logo.png" alt="Logo" class="experience__image">
+                    <div class="experience__info">
+                        <p class="experience__time" data-section="experience" data-value="first-job-dates">Feb 2017 - Current</p>
+                        <h3 class="experience__job" data-section="experience" data-value="first-job-title">Front End Developer</h3>
+                        <p class="experience__description" data-section="experience" data-value="first-job-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, molestias.</p>
+                    </div>
+                </div>
+            </article>
         </section>
+
         <section class="column column--right">
+
             <article class="card">
                 <h2 class="card__title">Front end</h2>
+                <small>Años de experiencia</small>
+                <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">5</span>
+                </div>
                 <div class="skills">
                     <div class="skills__item">
                         <p class="skills__tech">HTML</p>
@@ -67,6 +94,113 @@
                     <div class="skills__item">
                         <p class="skills__tech">JS</p>
                         <div class="skills__bar skills__bar--50"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h2 class="card__title">Design</h2>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">Photoshop</p>
+                        <div class="skills__bar skills__bar--90"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Illustrator</p>
+                        <div class="skills__bar skills__bar--60"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Figma</p>
+                        <div class="skills__bar skills__bar--50"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Adobe XD</p>
+                        <div class="skills__bar skills__bar--50"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h2 class="card__title">Multimedia</h2>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">After Effects</p>
+                        <div class="skills__bar skills__bar--90"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Premiere|</p>
+                        <div class="skills__bar skills__bar--60"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card--project">
+
+                <div class="card__image-container">
+                    <img src="./images/img-2.jpg" alt="Projects" class="card__image">
+                </div>
+
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">HTML</span>
+                        <span class="project__tag">CSS</span>
+                        <span class="project__tag">JavaScript</span>
+                        <span class="project__tag">Responsive</span>
+                    </div>
+                
+                    <h2 class="card__title">Landing Page</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum eum dolore asperiores quasi ducimus odio sit reiciendis, reprehenderit illo.</p>
+
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum eum dolore asperiores quasi ducimus odio sit reiciendis, reprehenderit illo.</p>
+                    <div class="buttons">
+                        <a href="#" class="button button--primary">Demo</a>
+                        <a href="#" class="button button--ghost">Code</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+
+                <div class="card__image-container">
+                    <img src="./images/img-2.jpg" alt="Projects" class="card__image">
+                </div>
+
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">HTML</span>
+                        <span class="project__tag">CSS</span>
+                        <span class="project__tag">JavaScript</span>
+                        <span class="project__tag">Responsive</span>
+                    </div>
+                
+                    <h2 class="card__title">Landing Page</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum eum dolore asperiores quasi ducimus odio sit reiciendis, reprehenderit illo.</p>
+
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum eum dolore asperiores quasi ducimus odio sit reiciendis, reprehenderit illo.</p>
+                    <div class="buttons">
+                        <a href="#" class="button button--primary">Demo</a>
+                        <a href="#" class="button button--ghost">Code</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+
+                <div class="card__image-container">
+                    <img src="./images/img-2.jpg" alt="Projects" class="card__image">
+                </div>
+
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">HTML</span>
+                        <span class="project__tag">CSS</span>
+                        <span class="project__tag">JavaScript</span>
+                        <span class="project__tag">Responsive</span>
+                    </div>
+                
+                    <h2 class="card__title">Landing Page</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum eum dolore asperiores quasi ducimus odio sit reiciendis, reprehenderit illo.</p>
+
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum eum dolore asperiores quasi ducimus odio sit reiciendis, reprehenderit illo.</p>
+                    <div class="buttons">
+                        <a href="#" class="button button--primary">Demo</a>
+                        <a href="#" class="button button--ghost">Code</a>
                     </div>
                 </div>
             </article>

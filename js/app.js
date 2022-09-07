@@ -10,6 +10,27 @@ const toggleColors = document.getElementById("toggle-colors");
 /** Variable para traer los estilos del root  */
 const rootStyles = document.documentElement.style;
 
+/** Variable para el cambio de idioma */
+const flagsElement = document.getElementById("flags");
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language =>{
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for (const textToChange of textsToChange){
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.innerHTML = texts[section][value];
+    }
+}
+
+flagsElement.addEventListener("click", (e) =>{
+    changeLanguage(e.target.parentElement.dataset.language);
+});
+
+
 /** 
  * Función click para cambiar de moon a sun
  */
